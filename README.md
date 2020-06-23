@@ -7,4 +7,5 @@ This is a Javascript sign in demo.
 More Details Coming Soon
 
 Author: Josiah Powell
+
 Date: 6/23/20
