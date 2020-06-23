@@ -12,7 +12,7 @@ More Details Coming Soon
 ![Screenshot of Github Website](https://joepall.github.io/Javascript/assets/images/screenshot.png)
 
 
-![Checkout the website](https://joepall.github.io/Javascript/)
+[Checkout the website](https://joepall.github.io/Javascript/)
 
 
 
