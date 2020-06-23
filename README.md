@@ -9,7 +9,7 @@ More Details Coming Soon
 ## Website
 
 
-![Screenshot of Github Website](https://joepall.github.io/CSS-Bootstrap/assets/images/screenshot.png)
+![Screenshot of Github Website](https://joepall.github.io/Javascript/assets/images/screenshot.png)
 
 
 (Checkout the website)[https://joepall.github.io/Javascript/]
