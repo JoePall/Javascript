@@ -15,8 +15,6 @@ More Details Coming Soon
 [Checkout the website](https://joepall.github.io/Javascript/)
 
 
-
-
 Author: Josiah Powell
 
 Date: 6/23/20
