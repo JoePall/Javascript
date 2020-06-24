@@ -16,25 +16,25 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword() {
   var result = "";
 
-  passwordBuilder.updateCriteria();
+  password.updatePreferences();
 
-  passwordBuilder.updateCharacters();
+  password.updateCharactersUsed();
 
-  passwordBuilder.buildPassword();
+  password.buildPassword();
 
-  result = passwordBuilder.password;
+  result = password.value;
 
   return result;
 }
 
-// Class for password building
-var passwordBuilder = {
+// Class for password
+var password = {
   hasLower: false,
   hasUpper: false,
   hasNumbers: false,
   hasSpecialCharacters: false,
   length: NaN,
-  password: "",
+  value: "",
 
   lowercase: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"],
   uppercase: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
@@ -46,24 +46,28 @@ var passwordBuilder = {
   updatePreferences: function () {
     do {
       this.length = parseInt(prompt("Please enter a password length between 8 and 128."));
+
+      if ((this.length >= 8 && this.length <= 128) == false) {
+        alert("Please select a number between 8 and 128.");
+      }
+    } while ((this.length >= 8 && this.length <= 128) == false)
+
+    do {
       this.hasLower = confirm("Press OK if you would like to use lower case letters?");
       this.hasUpper = confirm("Press OK if you would like to use upper case letters?");
       this.hasNumeric = confirm("Press OK if you would like to use numbers?");
       this.hasSpecialCharacters = confirm("Press OK if you would like to use special characters?");
-    } while (this.meetsMinimumCriteria() == false)
-  },
 
-  // Returns true if the minimum requirements for preferences are met; otherwise false
-  meetsMinimumCriteria: function () {
-    return ((this.hasLower || 
-      this.hasUpper || 
-      this.hasNumbers || 
-      this.hasSpecialCharacters) && 
-      this.length >= 8 && this.length <= 128);
+      if ((this.hasLower || this.hasUpper || this.hasNumbers || this.hasSpecialCharacters) == false) {
+        alert("You will also need to select some characters to be used.");
+      }
+    } while ((this.hasLower || this.hasUpper || this.hasNumbers || this.hasSpecialCharacters) == false)
+
+
   },
 
   // Updates the characters used for password generation
-  updateCharacters: function () {
+  updateCharactersUsed: function () {
     this.characters = [];
     if (this.hasLower) this.characters = this.characters.concat(this.lowercase);
     if (this.hasUpper) this.characters = this.characters.concat(this.uppercase);
@@ -73,10 +77,10 @@ var passwordBuilder = {
 
   // Generates a password using the specified characters in the passwordBuilder class
   buildPassword: function () {
-    this.password = "";
+    this.value = "";
     for (let i = 0; i < this.length; i++) {
       var k = Math.floor(Math.random() * this.characters.length);
-      this.password = this.password + this.characters[k];
+      this.value = this.value + this.characters[k];
     }
   }
 }
