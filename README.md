@@ -1,10 +1,10 @@
-# Javascript
+# Password Generator
 
-This is a Javascript sign in demo.
+This is a javascript password generator demo.
 
 ## Description
 
-More Details Coming Soon
+Password Generator is a Web Page that allows the user to generate a password according to the users specified preferences. It features letters upper case, lower case, numbers and special characters. The password length will be between 8 and 128 characters long.
 
 ## Website
 
@@ -12,9 +12,9 @@ More Details Coming Soon
 ![Screenshot of Github Website](https://joepall.github.io/Javascript/assets/images/screenshot.png)
 
 
-[Checkout the website](https://joepall.github.io/Javascript/)
+[Password Generator Page](https://joepall.github.io/Javascript/)
 
 
 Author: Josiah Powell
 
-Date: 6/23/20
+Date: 6/24/20
