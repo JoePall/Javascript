@@ -48,13 +48,13 @@ var password = {
 
     // Get user characters of password preference
     do {
-      if (confirm("Press OK if you would like to use lower case letters?")) {
+      if (confirm("Press OK if you would like to use lower case characters?")) {
         this.characters = this.characters.concat(this.lowercase);
       }
-      if (confirm("Press OK if you would like to use upper case letters?")) {
+      if (confirm("Press OK if you would like to use upper case characters?")) {
         this.characters = this.characters.concat(this.uppercase);
       }
-      if (confirm("Press OK if you would like to use numbers?")) {
+      if (confirm("Press OK if you would like to use numberic characters?")) {
         this.characters = this.characters.concat(this.numbers);
       }
       if (confirm("Press OK if you would like to use special characters?")) {
@@ -62,7 +62,7 @@ var password = {
       }
 
       if (this.characters.length <= 0) {
-        alert("Please select select characters to be used.");
+        alert("Please select characters to be used.");
       }
     } while (this.characters.length <= 0)
   },
