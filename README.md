@@ -1,10 +1,10 @@
 # Password Generator
 
-This is a javascript password generator demo.
+Generate a password that fits your needs! This web app allows you to generate a password that includes or excludes lowercase, uppercase, numbers and special characters based on your specifications.
 
 ## Description
 
-Password Generator is a Web Page that allows the user to generate a password according to the users specified preferences. It features letters upper case, lower case, numbers and special characters. The password length will be between 8 and 128 characters long.
+Password Generator is a web page that allows the user to generate a password according to the users specified preferences. The user can include or exclude upper case letters, lower case letters, numbers and special characters. The password length will be between 8 and 128 characters long and is generated using JavaScript.
 
 ## Website
 
