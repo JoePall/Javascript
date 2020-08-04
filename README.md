@@ -9,12 +9,11 @@ Password Generator is a web page that allows the user to generate a password acc
 ## Website
 
 
-![Screenshot of Github Website](https://joepall.github.io/Javascript/assets/images/screenshot.png)
+![Screenshot of Github Website](https://joepall.github.io/Password-Generator/assets/images/screenshot.png)
 
 
-[Password Generator Page](https://joepall.github.io/Javascript/)
+[Password Generator Page](https://joepall.github.io/Password-Generator/)
 
 
 Author: Josiah Powell
-
 Date: 6/24/20
